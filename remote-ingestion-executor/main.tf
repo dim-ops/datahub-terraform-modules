@@ -58,6 +58,7 @@ module "ecs_service" {
       enable_cloudwatch_logging   = var.enable_cloudwatch_logging
       create_cloudwatch_log_group = var.create_cloudwatch_log_group
       log_configuration           = var.log_configuration
+      readonly_root_filesystem    = false
 
       secrets = var.secrets
 
